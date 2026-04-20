@@ -1,11 +1,10 @@
-// ===== TELEGRAM BOT CONFIG =====
-// Замени значения после получения у @BotFather и @userinfobot
+// ===== TELEGRAM CONFIG =====
 const TG_TOKEN   = '8601517889:AAHUXXh3EdY978f648ilZKFCfgLKIHylUa0';
 const TG_CHAT_ID = '6555317176';
 
-// ===== FORM HANDLER =====
-document.addEventListener('DOMContentLoaded', () => {
-  const form       = document.getElementById('ctaForm');
+// ===== INIT (runs after DOM is ready, works both inline and defer) =====
+function initForm() {
+  const form     = document.getElementById('ctaForm');
   if (!form) return;
 
   const nameInput  = document.getElementById('ctaName');
@@ -15,40 +14,18 @@ document.addEventListener('DOMContentLoaded', () => {
   const nameErr    = document.getElementById('nameError');
   const phoneErr   = document.getElementById('phoneError');
 
+  function showError(input, errEl) { input.classList.add('error'); errEl.classList.add('show'); }
+  function clearError(input, errEl) { input.classList.remove('error'); errEl.classList.remove('show'); }
+
+  nameInput.addEventListener('input',  () => { if (nameInput.value.trim().length  >= 2) clearError(nameInput,  nameErr);  });
+  phoneInput.addEventListener('input', () => { if (phoneInput.value.trim().length >= 6) clearError(phoneInput, phoneErr); });
+
   function validate() {
     let ok = true;
-    if (!nameInput.value.trim() || nameInput.value.trim().length < 2) {
-      nameInput.classList.add('error');
-      nameErr.classList.add('show');
-      ok = false;
-    } else {
-      nameInput.classList.remove('error');
-      nameErr.classList.remove('show');
-    }
-    const phone = phoneInput.value.trim().replace(/\s/g, '');
-    if (!phone || phone.length < 7) {
-      phoneInput.classList.add('error');
-      phoneErr.classList.add('show');
-      ok = false;
-    } else {
-      phoneInput.classList.remove('error');
-      phoneErr.classList.remove('show');
-    }
+    if (nameInput.value.trim().length < 2)  { showError(nameInput,  nameErr);  ok = false; }
+    if (phoneInput.value.trim().length < 6) { showError(phoneInput, phoneErr); ok = false; }
     return ok;
   }
-
-  nameInput.addEventListener('input', () => {
-    if (nameInput.value.trim().length >= 2) {
-      nameInput.classList.remove('error');
-      nameErr.classList.remove('show');
-    }
-  });
-  phoneInput.addEventListener('input', () => {
-    if (phoneInput.value.trim().length >= 7) {
-      phoneInput.classList.remove('error');
-      phoneErr.classList.remove('show');
-    }
-  });
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -59,43 +36,37 @@ document.addEventListener('DOMContentLoaded', () => {
     const page  = document.title;
     const time  = new Date().toLocaleString('ru-RU', { timeZone: 'Asia/Almaty' });
 
-    const text = [
-      '📩 <b>Новая заявка с сайта Информатика</b>',
-      '',
-      `👤 <b>Имя:</b> ${name}`,
-      `📞 <b>Телефон:</b> ${phone}`,
-      `📖 <b>Страница:</b> ${page}`,
-      `🕐 <b>Время:</b> ${time}`,
-      `🌐 <b>Сайт:</b> https://azamatkajyrov26-lab.github.io/informatika-courses/`,
-    ].join('\n');
+    const text = `📩 <b>Новая заявка с сайта Информатика</b>\n\n👤 <b>Имя:</b> ${name}\n📞 <b>Телефон:</b> ${phone}\n📖 <b>Страница:</b> ${page}\n🕐 <b>Время:</b> ${time}\n🌐 <b>Сайт:</b> https://azamatkajyrov26-lab.github.io/informatika-courses/`;
 
-    // Loading state
     submitBtn.disabled = true;
     submitBtn.innerHTML = '<span class="spinner"></span> Отправка...';
 
     try {
-      const res = await fetch(
-        `https://api.telegram.org/bot${TG_TOKEN}/sendMessage`,
-        {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ chat_id: TG_CHAT_ID, text, parse_mode: 'HTML' }),
-        }
-      );
-      const data = await res.json();
-      if (data.ok) {
-        form.style.display = 'none';
-        successBox.classList.add('show');
-      } else {
-        throw new Error(data.description || 'Ошибка');
-      }
+      const resp = await fetch(`https://api.telegram.org/bot${TG_TOKEN}/sendMessage`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ chat_id: TG_CHAT_ID, text, parse_mode: 'HTML' }),
+      });
+
+      if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+      const data = await resp.json();
+      if (!data.ok) throw new Error(data.description || 'Telegram error');
+
+      form.style.display = 'none';
+      successBox.classList.add('show');
+
     } catch (err) {
+      console.error('[Telegram form]', err);
       submitBtn.disabled = false;
-      submitBtn.innerHTML = `
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-        Оставить контакты`;
-      alert('Ошибка отправки. Проверьте Bot Token и Chat ID в js/telegram.js');
-      console.error(err);
+      submitBtn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:18px;height:18px;flex-shrink:0"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg> Оставить контакты`;
+      alert('Не удалось отправить заявку. Попробуйте снова.');
     }
   });
-});
+}
+
+// Works regardless of when script loads
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initForm);
+} else {
+  initForm();
+}
