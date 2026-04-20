@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Информатика — онлайн курсы по IT и компьютерным технологиям">
+  <meta name="description" content="Информатика — онлайн курсы по IT: компьютерная грамотность, программирование, STEM">
   <title>Информатика | IT Курсы</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,347 +12,202 @@
 </head>
 <body>
 
-  <!-- NAVBAR -->
   <nav class="navbar" role="navigation" aria-label="Основная навигация">
     <div class="navbar-inner">
       <a href="index.html" class="nav-logo" aria-label="Информатика — главная">
-        <div class="nav-logo-icon" aria-hidden="true">💻</div>
-        <span>Инфор<span>матика</span></span>
+        <div class="nav-logo-mark" aria-hidden="true">IT</div>
+        Информатика
       </a>
-      <div class="nav-links" role="menubar">
-        <a href="index.html" class="active" role="menuitem">Курсы</a>
-        <a href="#features" role="menuitem">О нас</a>
-        <a href="#contact" role="menuitem">Контакты</a>
+      <div class="nav-links">
+        <a href="index.html" class="active">Курсы</a>
+        <a href="course.html">Компьютерная грамотность</a>
+        <a href="stem.html">STEM</a>
       </div>
-      <div class="nav-cta">
-        <a href="#courses" class="btn btn-primary" style="padding:10px 20px;font-size:0.875rem;">Начать обучение</a>
+      <div class="lang-switch" role="group" aria-label="Выбор языка">
+        <button class="active" aria-pressed="true">РУС</button>
+        <button aria-pressed="false">ҚАЗ</button>
       </div>
     </div>
   </nav>
 
   <!-- HERO -->
-  <section class="hero" aria-label="Приветственный блок">
-    <div class="container">
-      <div class="hero-content">
-        <div class="hero-eyebrow fade-up">
-          <span class="badge badge-blue">🎓 IT Образование</span>
-          <span class="badge badge-green">✓ Бесплатно</span>
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <div class="hero-kicker" aria-label="Тип платформы">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        Образовательная платформа
+      </div>
+      <h1>IT курсы для <span>каждого</span></h1>
+      <p>Компьютерная грамотность, программирование и STEM-технологии. Учись в своём темпе — всё бесплатно и на русском.</p>
+      <div class="hero-meta" aria-label="Характеристики платформы">
+        <div class="hero-meta-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5-10-5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          6 курсов
         </div>
-        <h1 class="hero-title fade-up fade-up-1">
-          Освой <span class="gradient-text">цифровые навыки</span><br>с нуля до профи
-        </h1>
-        <p class="hero-desc fade-up fade-up-2">
-          Практические курсы по компьютерной грамотности, программированию и STEM-технологиям.
-          Учись в своём темпе — онлайн и бесплатно.
-        </p>
-        <div class="hero-actions fade-up fade-up-3">
-          <a href="#courses" class="btn btn-primary">
-            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-            Начать обучение
-          </a>
-          <a href="#features" class="btn btn-outline">Узнать больше</a>
+        <div class="hero-meta-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          36+ часов материала
         </div>
-        <div class="hero-stats fade-up fade-up-4" aria-label="Статистика платформы">
-          <div class="stat-item">
-            <span class="stat-value">12+</span>
-            <span class="stat-label">Курсов</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-value">500+</span>
-            <span class="stat-label">Студентов</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-value">100%</span>
-            <span class="stat-label">Онлайн</span>
-          </div>
+        <div class="hero-meta-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+          Мобильная версия
+        </div>
+        <div class="hero-meta-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          100% бесплатно
         </div>
       </div>
     </div>
-  </section>
+  </div>
+
+  <!-- CHAPTER TABS -->
+  <div class="chapter-nav" role="tablist" aria-label="Разделы курсов">
+    <div class="chapter-nav-inner">
+      <button class="chapter-tab active" role="tab" aria-selected="true">
+        <span class="chapter-tab-num" aria-hidden="true">1</span> Компьютерная грамотность
+      </button>
+      <button class="chapter-tab" role="tab" aria-selected="false">
+        <span class="chapter-tab-num" aria-hidden="true">2</span> Программирование
+      </button>
+      <button class="chapter-tab" role="tab" aria-selected="false">
+        <span class="chapter-tab-num" aria-hidden="true">3</span> STEM
+      </button>
+      <button class="chapter-tab" role="tab" aria-selected="false">
+        <span class="chapter-tab-num" aria-hidden="true">4</span> Web
+      </button>
+      <button class="chapter-tab" role="tab" aria-selected="false">
+        <span class="chapter-tab-num" aria-hidden="true">5</span> Данные
+      </button>
+      <button class="chapter-tab" role="tab" aria-selected="false">
+        <span class="chapter-tab-num" aria-hidden="true">6</span> Безопасность
+      </button>
+    </div>
+  </div>
 
   <!-- COURSES -->
-  <section id="courses" class="section" aria-label="Каталог курсов">
-    <div class="container">
-      <div class="section-heading">
-        <div class="divider" aria-hidden="true"></div>
-        <h2>Наши <span class="accent">курсы</span></h2>
-        <p>Выбери направление и начни учиться прямо сейчас</p>
-      </div>
-
+  <div class="courses-section">
+    <div class="container-wide">
+      <p class="section-label">Все курсы</p>
       <div class="courses-grid" role="list">
 
-        <!-- Course 1 -->
-        <a href="course.html" class="glass-card course-card" role="listitem" aria-label="Компьютерная грамотность">
-          <div class="course-card-top">
-            <div class="course-icon blue" aria-hidden="true">🖥️</div>
-            <div class="course-arrow" aria-hidden="true">
-              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </div>
+        <a href="course.html" class="course-card" role="listitem" aria-label="Перейти к курсу: Компьютерная грамотность">
+          <div class="course-card-icon" aria-hidden="true">🖥️</div>
+          <div class="course-card-body">
+            <div class="course-card-chapter">Глава 1 · Начинающий · 4 ч</div>
+            <div class="course-card-title">Компьютерная грамотность</div>
+            <div class="course-card-desc">Железо, ОС, файлы, интернет, Microsoft Word и Excel — всё необходимое для уверенной работы с компьютером</div>
           </div>
-          <div>
-            <div style="margin-bottom:8px;"><span class="badge badge-blue">Глава 1</span></div>
-            <h3>Компьютерная грамотность</h3>
-            <p>Основы работы с компьютером: железо, ОС, файлы, интернет, Microsoft Office</p>
-          </div>
-          <div class="course-meta" aria-label="Информация о курсе">
-            <span class="course-meta-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              4 часа
-            </span>
-            <span class="course-meta-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-              Для новичков
-            </span>
-            <span class="badge badge-green" style="font-size:0.7rem;padding:4px 10px;">Бесплатно</span>
+          <div class="course-card-arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
           </div>
         </a>
 
-        <!-- Course 2 -->
-        <div class="glass-card course-card" role="listitem" aria-label="Основы программирования">
-          <div class="course-card-top">
-            <div class="course-icon red" aria-hidden="true">⚡</div>
-            <div class="course-arrow" aria-hidden="true">
-              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </div>
+        <a href="stem.html" class="course-card" role="listitem" aria-label="Перейти к курсу: STEM технологии">
+          <div class="course-card-icon green" aria-hidden="true">🔬</div>
+          <div class="course-card-body">
+            <div class="course-card-chapter">Глава 3 · Средний · 8 ч</div>
+            <div class="course-card-title">STEM технологии</div>
+            <div class="course-card-desc">Arduino, 3D-печать, Micro:bit, Scratch — создавай реальные проекты и изобретай будущее вместе с командой</div>
           </div>
-          <div>
-            <div style="margin-bottom:8px;"><span class="badge badge-red">Глава 2</span></div>
-            <h3>Основы программирования</h3>
-            <p>Алгоритмы, переменные, циклы и условия. Первые программы на Scratch и Python</p>
+          <div class="course-card-arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
           </div>
-          <div class="course-meta">
-            <span class="course-meta-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              6 часов
-            </span>
-            <span class="course-meta-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
-              Начинающий
-            </span>
-            <span class="badge badge-green" style="font-size:0.7rem;padding:4px 10px;">Бесплатно</span>
-          </div>
-        </div>
-
-        <!-- Course 3 -->
-        <div class="glass-card course-card" role="listitem" aria-label="STEM технологии">
-          <div class="course-card-top">
-            <div class="course-icon purple" aria-hidden="true">🔬</div>
-            <div class="course-arrow" aria-hidden="true">
-              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </div>
-          </div>
-          <div>
-            <div style="margin-bottom:8px;"><span class="badge badge-blue">Глава 3</span></div>
-            <h3>STEM технологии</h3>
-            <p>Arduino, 3D-печать, Micro:bit — создавай реальные проекты и изобретай будущее</p>
-          </div>
-          <div class="course-meta">
-            <span class="course-meta-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              8 часов
-            </span>
-            <span class="course-meta-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
-              Средний
-            </span>
-            <span class="badge badge-green" style="font-size:0.7rem;padding:4px 10px;">Бесплатно</span>
-          </div>
-        </div>
-
-        <!-- Course 4 -->
-        <div class="glass-card course-card" role="listitem" aria-label="Web разработка">
-          <div class="course-card-top">
-            <div class="course-icon green" aria-hidden="true">🌐</div>
-            <div class="course-arrow" aria-hidden="true">
-              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </div>
-          </div>
-          <div>
-            <div style="margin-bottom:8px;"><span class="badge badge-blue">Глава 4</span></div>
-            <h3>Web разработка</h3>
-            <p>HTML, CSS, JavaScript — создай свой первый сайт с нуля до готового проекта</p>
-          </div>
-          <div class="course-meta">
-            <span class="course-meta-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              10 часов
-            </span>
-            <span class="course-meta-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
-              Начинающий
-            </span>
-            <span class="badge badge-green" style="font-size:0.7rem;padding:4px 10px;">Бесплатно</span>
-          </div>
-        </div>
-
-        <!-- Course 5 -->
-        <div class="glass-card course-card" role="listitem" aria-label="Работа с данными">
-          <div class="course-card-top">
-            <div class="course-icon blue" aria-hidden="true">📊</div>
-            <div class="course-arrow" aria-hidden="true">
-              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </div>
-          </div>
-          <div>
-            <div style="margin-bottom:8px;"><span class="badge badge-blue">Глава 5</span></div>
-            <h3>Работа с данными</h3>
-            <p>Microsoft Excel, Google Sheets — анализ данных, формулы и создание отчётов</p>
-          </div>
-          <div class="course-meta">
-            <span class="course-meta-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              5 часов
-            </span>
-            <span class="course-meta-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
-              Для всех
-            </span>
-            <span class="badge badge-green" style="font-size:0.7rem;padding:4px 10px;">Бесплатно</span>
-          </div>
-        </div>
-
-        <!-- Course 6 -->
-        <div class="glass-card course-card" role="listitem" aria-label="Кибербезопасность">
-          <div class="course-card-top">
-            <div class="course-icon red" aria-hidden="true">🔐</div>
-            <div class="course-arrow" aria-hidden="true">
-              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </div>
-          </div>
-          <div>
-            <div style="margin-bottom:8px;"><span class="badge badge-red">Глава 6</span></div>
-            <h3>Кибербезопасность</h3>
-            <p>Защита данных, безопасный интернет, пароли и основы цифровой гигиены</p>
-          </div>
-          <div class="course-meta">
-            <span class="course-meta-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              3 часа
-            </span>
-            <span class="course-meta-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
-              Для всех
-            </span>
-            <span class="badge badge-green" style="font-size:0.7rem;padding:4px 10px;">Бесплатно</span>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- FEATURES -->
-  <section id="features" class="section" style="background:rgba(255,255,255,0.02);" aria-label="Преимущества">
-    <div class="container">
-      <div class="section-heading">
-        <div class="divider" aria-hidden="true"></div>
-        <h2>Почему <span class="accent">мы?</span></h2>
-        <p>Учись современно, практично и без лишних барьеров</p>
-      </div>
-
-      <div class="features-grid">
-        <div class="glass-card feature-card">
-          <div class="feature-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          </div>
-          <div class="feature-content">
-            <h3>Практические задания</h3>
-            <p>Каждый урок содержит реальные задачи. Ты учишься делая, а не просто читая теорию.</p>
-          </div>
-        </div>
-
-        <div class="glass-card feature-card">
-          <div class="feature-icon red" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          </div>
-          <div class="feature-content">
-            <h3>В своём темпе</h3>
-            <p>Нет дедлайнов и расписания. Проходи материал когда удобно — утром, вечером или в выходные.</p>
-          </div>
-        </div>
-
-        <div class="glass-card feature-card">
-          <div class="feature-icon green" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          </div>
-          <div class="feature-content">
-            <h3>100% бесплатно</h3>
-            <p>Все курсы абсолютно бесплатны. Качественное IT-образование доступно каждому.</p>
-          </div>
-        </div>
-
-        <div class="glass-card feature-card">
-          <div class="feature-icon purple" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-          </div>
-          <div class="feature-content">
-            <h3>Мобильная версия</h3>
-            <p>Учись с телефона — сайт оптимизирован для мобильных устройств. Сканируй QR и начинай сразу.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="section" id="contact" aria-label="Призыв к действию">
-    <div class="container">
-      <div class="cta-banner">
-        <h2>Готов начать своё <span class="gradient-text">IT путешествие?</span></h2>
-        <p>Выбери курс и сделай первый шаг в мир цифровых технологий уже сегодня</p>
-        <a href="#courses" class="btn btn-primary">
-          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-          Начать бесплатно
         </a>
+
+        <div class="course-card" role="listitem" aria-label="Курс: Основы программирования (скоро)">
+          <div class="course-card-icon amber" aria-hidden="true">⚡</div>
+          <div class="course-card-body">
+            <div class="course-card-chapter">Глава 2 · Начинающий · 6 ч</div>
+            <div class="course-card-title">Основы программирования</div>
+            <div class="course-card-desc">Алгоритмы, переменные, циклы — первые программы на Scratch и Python</div>
+          </div>
+          <div class="course-card-arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+          </div>
+        </div>
+
+        <div class="course-card" role="listitem" aria-label="Курс: Web разработка (скоро)">
+          <div class="course-card-icon purple" aria-hidden="true">🌐</div>
+          <div class="course-card-body">
+            <div class="course-card-chapter">Глава 4 · Начинающий · 10 ч</div>
+            <div class="course-card-title">Web разработка</div>
+            <div class="course-card-desc">HTML, CSS, JavaScript — создай свой первый сайт от нуля до публикации</div>
+          </div>
+          <div class="course-card-arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+          </div>
+        </div>
+
+        <div class="course-card" role="listitem" aria-label="Курс: Работа с данными (скоро)">
+          <div class="course-card-icon" aria-hidden="true">📊</div>
+          <div class="course-card-body">
+            <div class="course-card-chapter">Глава 5 · Для всех · 5 ч</div>
+            <div class="course-card-title">Работа с данными</div>
+            <div class="course-card-desc">Excel и Google Sheets: формулы, диаграммы, анализ данных и создание отчётов</div>
+          </div>
+          <div class="course-card-arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+          </div>
+        </div>
+
+        <div class="course-card" role="listitem" aria-label="Курс: Кибербезопасность (скоро)">
+          <div class="course-card-icon red" aria-hidden="true">🔐</div>
+          <div class="course-card-body">
+            <div class="course-card-chapter">Глава 6 · Для всех · 3 ч</div>
+            <div class="course-card-title">Кибербезопасность</div>
+            <div class="course-card-desc">Защита данных, безопасный интернет, пароли и основы цифровой гигиены</div>
+          </div>
+          <div class="course-card-arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+          </div>
+        </div>
+
       </div>
     </div>
-  </section>
+  </div>
 
-  <!-- FOOTER -->
   <footer role="contentinfo">
-    <div class="container">
-      <div class="footer-inner">
-        <div class="footer-brand">
-          <a href="index.html" class="nav-logo" style="margin-bottom:0;">
-            <div class="nav-logo-icon" aria-hidden="true">💻</div>
-            <span>Инфор<span>матика</span></span>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div>
+          <a href="index.html" class="nav-logo">
+            <div class="nav-logo-mark" aria-hidden="true">IT</div>
+            Информатика
           </a>
-          <p>Современное IT образование для всех. Бесплатно, практично и на русском языке.</p>
+          <p class="footer-brand-desc">Современное IT образование на русском языке. Бесплатно для всех.</p>
         </div>
-
-        <nav class="footer-links-grid" aria-label="Навигация в подвале">
+        <nav class="footer-cols" aria-label="Навигация в подвале">
           <div class="footer-col">
             <h4>Курсы</h4>
             <a href="course.html">Компьютерная грамотность</a>
+            <a href="stem.html">STEM технологии</a>
             <a href="#">Программирование</a>
-            <a href="#">STEM технологии</a>
             <a href="#">Web разработка</a>
-          </div>
-          <div class="footer-col">
-            <h4>Платформа</h4>
-            <a href="#">О нас</a>
-            <a href="#">Контакты</a>
-            <a href="#">Для преподавателей</a>
           </div>
           <div class="footer-col">
             <h4>Ресурсы</h4>
             <a href="#">Scratch</a>
             <a href="#">Code.org</a>
             <a href="#">Tinkercad</a>
+            <a href="#">Arduino</a>
+          </div>
+          <div class="footer-col">
+            <h4>Платформа</h4>
+            <a href="#">О проекте</a>
+            <a href="#">Контакты</a>
+            <a href="#">Для учителей</a>
           </div>
         </nav>
       </div>
-
       <div class="footer-bottom">
-        <p>© 2024 Информатика. Все права защищены.</p>
-        <p>Сделано с ❤ для образования в Казахстане</p>
+        <span>© 2024 Информатика. Все права защищены.</span>
+        <span>Казахстан · Образование для всех</span>
       </div>
     </div>
   </footer>
 
-  <!-- BACK TO TOP -->
-  <button class="back-to-top" id="backToTop" aria-label="Вернуться наверх">
-    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
+  <button class="back-top" id="backTop" aria-label="Вернуться наверх">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
   </button>
 
   <script src="js/main.js"></script>

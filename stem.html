@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="STEM — наука, технологии, инженерия, математика. Arduino, 3D-печать, Micro:bit, Scratch">
+  <title>STEM технологии | Информатика</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="Основная навигация">
+    <div class="navbar-inner">
+      <a href="index.html" class="nav-back" aria-label="Вернуться к списку курсов">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+        Все курсы
+      </a>
+      <a href="index.html" class="nav-logo" aria-label="Информатика — главная">
+        <div class="nav-logo-mark" aria-hidden="true">IT</div>
+        <span style="display:none;">Информатика</span>
+      </a>
+      <div class="lang-switch" role="group" aria-label="Выбор языка">
+        <button aria-pressed="false">РУС</button>
+        <button class="active" aria-pressed="true">ҚАЗ</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-wide">
+    <nav class="breadcrumb" aria-label="Путь">
+      <a href="index.html">Главная</a>
+      <span class="breadcrumb-sep" aria-hidden="true">/</span>
+      <a href="index.html">IT курсы</a>
+      <span class="breadcrumb-sep" aria-hidden="true">/</span>
+      <span aria-current="page">STEM технологии</span>
+    </nav>
+  </div>
+
+  <div class="content-layout">
+
+    <!-- SIDEBAR -->
+    <aside class="toc-sidebar" aria-label="Содержание">
+      <p class="toc-title">Содержание</p>
+      <ul class="toc-list" role="list">
+        <li>
+          <a href="#what-is-stem" class="toc-item active" role="listitem">
+            <span class="toc-dot" aria-hidden="true"></span>
+            Что такое STEM?
+          </a>
+        </li>
+        <li>
+          <a href="#why-stem" class="toc-item" role="listitem">
+            <span class="toc-dot" aria-hidden="true"></span>
+            Почему STEM важен
+          </a>
+        </li>
+        <li>
+          <a href="#benefits" class="toc-item" role="listitem">
+            <span class="toc-dot" aria-hidden="true"></span>
+            Что даёт STEM образование
+          </a>
+        </li>
+        <li>
+          <a href="#projects" class="toc-item" role="listitem">
+            <span class="toc-dot" aria-hidden="true"></span>
+            10 идей для проектов
+          </a>
+        </li>
+        <li>
+          <a href="#how-to-start" class="toc-item" role="listitem">
+            <span class="toc-dot" aria-hidden="true"></span>
+            Как начать проект
+          </a>
+        </li>
+        <li>
+          <a href="#tools" class="toc-item" role="listitem">
+            <span class="toc-dot" aria-hidden="true"></span>
+            Инструменты и платформы
+          </a>
+        </li>
+      </ul>
+
+      <div class="toc-divider" aria-hidden="true"></div>
+      <p class="toc-title">Другие главы</p>
+      <ul class="toc-chapters" role="list">
+        <li>
+          <a href="course.html" class="toc-chapter" role="listitem">
+            <span class="toc-chapter-num" aria-label="Глава 1">1</span>
+            Компьютерная грамотность
+          </a>
+        </li>
+        <li>
+          <a href="#" class="toc-chapter" role="listitem">
+            <span class="toc-chapter-num" aria-label="Глава 2">2</span>
+            Программирование
+          </a>
+        </li>
+        <li>
+          <a href="#" class="toc-chapter" role="listitem">
+            <span class="toc-chapter-num" aria-label="Глава 4">4</span>
+            Web разработка
+          </a>
+        </li>
+      </ul>
+    </aside>
+
+    <!-- ARTICLE -->
+    <main class="article-wrap" id="main-content">
+
+      <header class="article-header">
+        <div class="article-chapter-label">
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5-10-5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          ГЛАВА 3
+        </div>
+        <h1>STEM — Болашаққа бастар жол</h1>
+        <blockquote class="article-intro">
+          STEM — бұл ғылым (Science), технология (Technology), инженерия (Engineering) және математика (Mathematics) бағыттарын біріктіретін заманауи білім беру жүйесі.
+        </blockquote>
+        <div class="article-meta">
+          <span class="article-meta-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            8 часов
+          </span>
+          <span class="article-meta-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            6 разделов
+          </span>
+          <span class="article-meta-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+            Средний уровень
+          </span>
+        </div>
+      </header>
+
+      <!-- WHAT IS STEM -->
+      <section class="content-section" id="what-is-stem" aria-labelledby="what-stem-title">
+        <h2 class="section-title" id="what-stem-title">
+          <span class="section-title-icon" style="background:var(--green-light);" aria-hidden="true">🔬</span>
+          Что такое STEM?
+        </h2>
+
+        <div class="stem-grid" role="list" aria-label="Составляющие STEM">
+          <div class="stem-card" role="listitem">
+            <div class="stem-card-letter" aria-hidden="true">S</div>
+            <div class="stem-card-word">Science</div>
+            <div class="stem-card-ru">Ғылым / Наука</div>
+          </div>
+          <div class="stem-card" role="listitem">
+            <div class="stem-card-letter" aria-hidden="true">T</div>
+            <div class="stem-card-word">Technology</div>
+            <div class="stem-card-ru">Технология</div>
+          </div>
+          <div class="stem-card" role="listitem">
+            <div class="stem-card-letter" aria-hidden="true">E</div>
+            <div class="stem-card-word">Engineering</div>
+            <div class="stem-card-ru">Инженерия / Техника</div>
+          </div>
+          <div class="stem-card" role="listitem">
+            <div class="stem-card-letter" aria-hidden="true">M</div>
+            <div class="stem-card-word">Mathematics</div>
+            <div class="stem-card-ru">Математика</div>
+          </div>
+        </div>
+
+        <div class="callout callout-blue" role="note">
+          <span class="callout-icon" aria-hidden="true">💡</span>
+          <div>
+            <strong>STEM дегеніміз</strong> — ғылым, технология, техника және математиканы біріктіре отырып оқыту.<br><br>
+            Бұл тәсіл білім алушылардың теориялық біліммен қатар практикалық дағдыларын, логикалық және сыни ойлау қабілетін, топпен жұмыс істеу және шешім қабылдау қабілеттерін дамытуды мақсат етеді.
+          </div>
+        </div>
+
+        <div class="highlight-box" role="note">
+          <h3>Қарапайым мысал</h3>
+          <p>Сен робот құрастырып, оны бағдарламалап, оның қозғалысын есептеп үйренсең — STEM-пен айналысып жүрсің деген сөз. Бұл бір уақытта физика, математика, информатика және инженерия!</p>
+        </div>
+      </section>
+
+      <div class="section-divider" aria-hidden="true"></div>
+
+      <!-- WHY STEM -->
+      <section class="content-section" id="why-stem" aria-labelledby="why-stem-title">
+        <h2 class="section-title" id="why-stem-title">
+          <span class="section-title-icon" style="background:var(--blue-light);" aria-hidden="true">🌍</span>
+          Неге STEM маңызды? / Почему STEM важен?
+        </h2>
+
+        <div class="callout callout-blue" role="note">
+          <span class="callout-icon" aria-hidden="true">📢</span>
+          <div>Бүгінгі таңда әлем қарқынды дамып жатыр. Жаңа технологиялар, жасанды интеллект, инженерлік шешімдер күн сайын қолданысқа енуде.</div>
+        </div>
+
+        <div class="info-list" role="list" aria-label="Развивающиеся области">
+          <div class="info-row" role="listitem">
+            <span class="info-row-num" aria-hidden="true">1</span>
+            <div>
+              <strong>Жасанды интеллект (AI)</strong>
+              <p>Жасанды интеллект технологиялары медицина, транспорт, білім беру салаларында белсенді қолданылуда</p>
+            </div>
+          </div>
+          <div class="info-row" role="listitem">
+            <span class="info-row-num" aria-hidden="true">2</span>
+            <div>
+              <strong>Ғарыштық технологиялар (Space Technology)</strong>
+              <p>Жеке компаниялар ғарышқа жолдар ашуда. Бұл саладағы инженерлерге сұраныс өсуде</p>
+            </div>
+          </div>
+          <div class="info-row" role="listitem">
+            <span class="info-row-num" aria-hidden="true">3</span>
+            <div>
+              <strong>Биоинженерия (Bioengineering)</strong>
+              <p>Биологияны технологиямен біріктіру арқылы жаңа дәрілер мен медициналық құрылғылар жасалуда</p>
+            </div>
+          </div>
+          <div class="info-row" role="listitem">
+            <span class="info-row-num" aria-hidden="true">4</span>
+            <div>
+              <strong>3D-баспа (3D Printing)</strong>
+              <p>Үш өлшемді баспа технологиясы өндіріс пен медицинада революция жасауда</p>
+            </div>
+          </div>
+          <div class="info-row" role="listitem">
+            <span class="info-row-num" aria-hidden="true">5</span>
+            <div>
+              <strong>Виртуалды шындық (VR/AR)</strong>
+              <p>Білім беруде, ойындарда және өнеркәсіпте кеңінен қолданылатын болды</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="callout callout-green" role="note" style="margin-top:16px;">
+          <span class="callout-icon" aria-hidden="true">🎯</span>
+          <div>Егер сен осы салаларда жетістікке жеткің келсе — <strong>STEM-білім саған көмектеседі</strong>.</div>
+        </div>
+      </section>
+
+      <div class="section-divider" aria-hidden="true"></div>
+
+      <!-- BENEFITS -->
+      <section class="content-section" id="benefits" aria-labelledby="benefits-title">
+        <h2 class="section-title" id="benefits-title">
+          <span class="section-title-icon" style="background:var(--purple-light);" aria-hidden="true">⭐</span>
+          STEM білімі не береді?
+        </h2>
+        <p class="section-subtitle">Что даёт STEM образование</p>
+
+        <div class="skill-cards">
+
+          <div class="skill-card">
+            <div class="skill-card-head">
+              <div class="skill-card-icon" aria-hidden="true">🧪</div>
+              <h3>Қызықты оқу — Интерактивное обучение</h3>
+            </div>
+            <p>Сабақтар зертханалық тәжірибелер, жобалар және ойын түрінде өтеді. Скучных лекций нет — только практика, эксперименты и реальные проекты.</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card-head">
+              <div class="skill-card-icon green" aria-hidden="true">🌱</div>
+              <h3>Шынайы өмірмен байланыс — Реальное применение</h3>
+            </div>
+            <p>Алған білім тек кітапта қалмай, нақты өмірде қолданылады. Всё что узнаёшь — сразу применяется на практике: школа, дом, город.</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card-head">
+              <div class="skill-card-icon purple" aria-hidden="true">👥</div>
+              <h3>Топпен жұмыс — Командная работа</h3>
+            </div>
+            <p>Бірлескен жобалар арқылы командада жұмыс істеуді үйренесің. Совместные проекты развивают коммуникацию, распределение задач и ответственность.</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card-head">
+              <div class="skill-card-icon" style="background:var(--red-light);" aria-hidden="true">🧩</div>
+              <h3>Мәселелерді шешу — Решение задач</h3>
+            </div>
+            <p>Қиындықтардан қорықпай, шешім табуды үйренесің. Учишься не бояться проблем, а находить нестандартные решения — ключевой навык любого инженера.</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card-head">
+              <div class="skill-card-icon" style="background:var(--amber-light);" aria-hidden="true">💡</div>
+              <h3>Креатив пен логика — Творчество и логика</h3>
+            </div>
+            <p>Бір тапсырмада әрі ойлап табушы, әрі есептеуші болуға тура келеді. В одном задании нужно быть и изобретателем, и аналитиком одновременно.</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card-head">
+              <div class="skill-card-icon green" aria-hidden="true">🚀</div>
+              <h3>Болашаққа дайындық — Карьера в IT</h3>
+            </div>
+            <p>STEM арқылы инженер, IT-маман, ғалым болуға алғашқы қадам жасайсың. Это первый шаг к карьере инженера, программиста, учёного или дизайнера.</p>
+          </div>
+
+        </div>
+      </section>
+
+      <div class="section-divider" aria-hidden="true"></div>
+
+      <!-- PROJECT IDEAS -->
+      <section class="content-section" id="projects" aria-labelledby="projects-title">
+        <h2 class="section-title" id="projects-title">
+          <span class="section-title-icon" style="background:var(--amber-light);" aria-hidden="true">💡</span>
+          10 оқушыға арналған STEM жобалары
+        </h2>
+        <p class="section-subtitle">10 простых STEM-идей для школьников</p>
+
+        <div class="ideas-list" role="list">
+          <div class="idea-item" role="listitem">
+            <span class="idea-num" aria-label="Идея 1">01</span>
+            <div>
+              <strong>Ақылды суару жүйесі</strong> — гүлдерге уақытылы су құятын автомат.
+              <div style="font-size:0.78rem;color:var(--text-4);margin-top:2px;">Arduino + датчик влажности почвы + помпа</div>
+            </div>
+          </div>
+          <div class="idea-item" role="listitem">
+            <span class="idea-num" aria-label="Идея 2">02</span>
+            <div>
+              <strong>Күн сәулесімен зарядталатын телефон қуаттағыш</strong> — шағын күн панелі арқылы.
+              <div style="font-size:0.78rem;color:var(--text-4);margin-top:2px;">Солнечная панель + контроллер заряда</div>
+            </div>
+          </div>
+          <div class="idea-item" role="listitem">
+            <span class="idea-num" aria-label="Идея 3">03</span>
+            <div>
+              <strong>Қоқыс сұрыптау құрылғысы</strong> — магнит пен сенсор арқылы.
+              <div style="font-size:0.78rem;color:var(--text-4);margin-top:2px;">Arduino + магнит + датчик металла</div>
+            </div>
+          </div>
+          <div class="idea-item" role="listitem">
+            <span class="idea-num" aria-label="Идея 4">04</span>
+            <div>
+              <strong>Жол қауіпсіздігін арттыратын бағдаршам макеті</strong> — Arduino арқылы басқару.
+              <div style="font-size:0.78rem;color:var(--text-4);margin-top:2px;">Arduino + PIR сенсор движения + LED</div>
+            </div>
+          </div>
+          <div class="idea-item" role="listitem">
+            <span class="idea-num" aria-label="Идея 5">05</span>
+            <div>
+              <strong>Мектеп ауасындағы CO₂ өлшейтін сенсор</strong> — экология жобасы.
+              <div style="font-size:0.78rem;color:var(--text-4);margin-top:2px;">Arduino + MQ135 датчик + дисплей</div>
+            </div>
+          </div>
+          <div class="idea-item" role="listitem">
+            <span class="idea-num" aria-label="Идея 6">06</span>
+            <div>
+              <strong>Жер сілкінісін ескертетін құрылғы</strong> — датчиктер көмегімен.
+              <div style="font-size:0.78rem;color:var(--text-4);margin-top:2px;">Arduino + акселерометр MPU-6050</div>
+            </div>
+          </div>
+          <div class="idea-item" role="listitem">
+            <span class="idea-num" aria-label="Идея 7">07</span>
+            <div>
+              <strong>3D-принтер арқылы жасалған ерекше заттар</strong> — мектеп құралдары, ойыншықтар.
+              <div style="font-size:0.78rem;color:var(--text-4);margin-top:2px;">Tinkercad + 3D принтер</div>
+            </div>
+          </div>
+          <div class="idea-item" role="listitem">
+            <span class="idea-num" aria-label="Идея 8">08</span>
+            <div>
+              <strong>Дыбысқа реакция беретін жарықтар</strong> — Arduino көмегімен.
+              <div style="font-size:0.78rem;color:var(--text-4);margin-top:2px;">Arduino + микрофон + LED стрип</div>
+            </div>
+          </div>
+          <div class="idea-item" role="listitem">
+            <span class="idea-num" aria-label="Идея 9">09</span>
+            <div>
+              <strong>Қолмен басқарылатын робот-қол</strong> — инженерлік жоба.
+              <div style="font-size:0.78rem;color:var(--text-4);margin-top:2px;">Arduino + сервомоторы + перчатка с датчиками</div>
+            </div>
+          </div>
+          <div class="idea-item" role="listitem">
+            <span class="idea-num" aria-label="Идея 10">10</span>
+            <div>
+              <strong>Экологиялық таза сөмке немесе киім үлгісі</strong> — STEM + дизайн.
+              <div style="font-size:0.78rem;color:var(--text-4);margin-top:2px;">Переработанные материалы + 3D-принтер</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="fact-box" role="note">
+          <div class="fact-box-head">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            Қызықты факт! / Интересный факт!
+          </div>
+          <p>Бір топ қазақстандық оқушылар «Жол апаттарын азайтатын ақылды бағдаршам» жобасын жасап, әлемдік STEM олимпиадасында жүлде жеңіп алды! Олар Arduino құрылғысын, қозғалыс сенсорларын және жасанды интеллект элементтерін қолданған. <strong>Бұл — мектептен басталған үлкен жетістік!</strong></p>
+        </div>
+      </section>
+
+      <div class="section-divider" aria-hidden="true"></div>
+
+      <!-- HOW TO START -->
+      <section class="content-section" id="how-to-start" aria-labelledby="start-title">
+        <h2 class="section-title" id="start-title">
+          <span class="section-title-icon" style="background:var(--green-light);" aria-hidden="true">🗺️</span>
+          STEM жобасын қалай бастау керек?
+        </h2>
+        <p class="section-subtitle">Как начать STEM-проект — пошаговый план</p>
+
+        <div class="steps" role="list">
+          <div class="step" role="listitem">
+            <div class="step-left" aria-hidden="true">
+              <div class="step-num">1</div>
+              <div class="step-line"></div>
+            </div>
+            <div class="step-content">
+              <h4>Мәселені таңда — Выбери проблему</h4>
+              <p>Мектеп, үй, көше — қай жерде не шешілмей тұрғанын байқа. Мысалы: сыныптағы ауа таза ма? Қоқыс қайда тасталады? Школа, дом, улица — что нужно улучшить?</p>
+            </div>
+          </div>
+          <div class="step" role="listitem">
+            <div class="step-left" aria-hidden="true">
+              <div class="step-num">2</div>
+              <div class="step-line"></div>
+            </div>
+            <div class="step-content">
+              <h4>Жоба мақсатын жаз — Напиши цели</h4>
+              <p>Бұл жоба не үшін керек? Кімге көмектеседі? Запиши: зачем этот проект, кому поможет, какой результат ожидаешь?</p>
+            </div>
+          </div>
+          <div class="step" role="listitem">
+            <div class="step-left" aria-hidden="true">
+              <div class="step-num">3</div>
+              <div class="step-line"></div>
+            </div>
+            <div class="step-content">
+              <h4>Зерттеу жаса — Изучи тему</h4>
+              <p>Ұқсас жобалар бар ма? Қандай құрал керек? Қалай жұмыс істейді? Есть ли похожие проекты? Какие материалы и инструменты понадобятся?</p>
+            </div>
+          </div>
+          <div class="step" role="listitem">
+            <div class="step-left" aria-hidden="true">
+              <div class="step-num">4</div>
+              <div class="step-line"></div>
+            </div>
+            <div class="step-content">
+              <h4>Жобаны жоспарла — Составь план</h4>
+              <p>Эскиз сал, қандай материалдар қолданасың — жазып ал. Нарисуй схему, составь список материалов и этапов работы.</p>
+            </div>
+          </div>
+          <div class="step" role="listitem">
+            <div class="step-left" aria-hidden="true">
+              <div class="step-num">5</div>
+              <div class="step-line"></div>
+            </div>
+            <div class="step-content">
+              <h4>Жасап көр! — Собери и протестируй!</h4>
+              <p>Кішкентай қателік — үйренудің бір бөлігі. Қайта жасап, сынап көр. Маленькая ошибка — часть обучения. Переделывай и тестируй!</p>
+            </div>
+          </div>
+          <div class="step" role="listitem">
+            <div class="step-left" aria-hidden="true">
+              <div class="step-num">6</div>
+              <div class="step-line" style="display:none;"></div>
+            </div>
+            <div class="step-content">
+              <h4>Презентация жаса — Представь проект</h4>
+              <p>Жобаңды таныстыру үшін слайд, видео немесе макет жаса. Сделай презентацию: слайды, видео или макет для демонстрации результата.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider" aria-hidden="true"></div>
+
+      <!-- TOOLS -->
+      <section class="content-section" id="tools" aria-labelledby="tools-title">
+        <h2 class="section-title" id="tools-title">
+          <span class="section-title-icon" style="background:var(--blue-light);" aria-hidden="true">🛠️</span>
+          Қажетті құралдар мен платформалар
+        </h2>
+        <p class="section-subtitle">Инструменты и бесплатные платформы для STEM</p>
+
+        <div class="tools-grid" role="list">
+          <div class="tool-item" role="listitem">
+            <span class="tool-icon" aria-hidden="true">⚡</span>
+            <div>
+              <div class="tool-name">Arduino</div>
+              <div class="tool-desc">Сенсорлар мен моторларды басқаруға арналған шағын компьютер. Управляй датчиками и моторами.</div>
+            </div>
+          </div>
+          <div class="tool-item" role="listitem">
+            <span class="tool-icon" aria-hidden="true">🖨️</span>
+            <div>
+              <div class="tool-name">3D-принтер</div>
+              <div class="tool-desc">Өз заттарыңды модельдеп басып шығаруға. Печатай собственные изобретения.</div>
+            </div>
+          </div>
+          <div class="tool-item" role="listitem">
+            <span class="tool-icon" aria-hidden="true">📟</span>
+            <div>
+              <div class="tool-name">Micro:bit</div>
+              <div class="tool-desc">Кодтауды үйренуге ыңғайлы шағын құрылғы. Идеально для изучения кода.</div>
+            </div>
+          </div>
+          <div class="tool-item" role="listitem">
+            <span class="tool-icon" aria-hidden="true">🐱</span>
+            <div>
+              <div class="tool-name">Scratch</div>
+              <div class="tool-desc">Код пен анимацияға арналған тегін платформа. Бесплатно для всех возрастов.</div>
+            </div>
+          </div>
+          <div class="tool-item" role="listitem">
+            <span class="tool-icon" aria-hidden="true">🔧</span>
+            <div>
+              <div class="tool-name">Tinkercad</div>
+              <div class="tool-desc">3D-модельдеу мен Arduino симуляциясы. Проектируй и тестируй онлайн.</div>
+            </div>
+          </div>
+          <div class="tool-item" role="listitem">
+            <span class="tool-icon" aria-hidden="true">🌐</span>
+            <div>
+              <div class="tool-name">Code.org</div>
+              <div class="tool-desc">Программирование для начинающих. Бесплатные курсы для школьников.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="callout callout-amber" style="margin-top:20px;" role="note">
+          <span class="callout-icon" aria-hidden="true">⚠️</span>
+          <div>Scratch, Tinkercad, Code.org — <strong>тегін платформалар / бесплатные платформы</strong>. Интернет пен браузер болса жеткілікті. Нужны только интернет и браузер!</div>
+        </div>
+      </section>
+
+      <!-- CHAPTER NAV -->
+      <nav class="chapter-nav-bottom" aria-label="Навигация по главам">
+        <a href="course.html" class="chapter-nav-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+          <div>
+            <span class="btn-sub">Предыдущая глава</span>
+            Компьютерная грамотность
+          </div>
+        </a>
+        <a href="index.html" class="chapter-nav-btn next">
+          <div>
+            <span class="btn-sub">Все курсы</span>
+            Вернуться к списку
+          </div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </nav>
+
+    </main>
+  </div>
+
+  <footer role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div>
+          <a href="index.html" class="nav-logo">
+            <div class="nav-logo-mark" aria-hidden="true">IT</div>
+            Информатика
+          </a>
+          <p class="footer-brand-desc">Современное IT образование на русском языке. Бесплатно для всех.</p>
+        </div>
+        <nav class="footer-cols" aria-label="Навигация в подвале">
+          <div class="footer-col">
+            <h4>Курсы</h4>
+            <a href="course.html">Компьютерная грамотность</a>
+            <a href="stem.html">STEM технологии</a>
+            <a href="#">Программирование</a>
+          </div>
+          <div class="footer-col">
+            <h4>Ресурсы</h4>
+            <a href="#">Scratch</a>
+            <a href="#">Code.org</a>
+            <a href="#">Tinkercad</a>
+          </div>
+          <div class="footer-col">
+            <h4>Платформа</h4>
+            <a href="#">О проекте</a>
+            <a href="#">Контакты</a>
+          </div>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2024 Информатика. Все права защищены.</span>
+        <span>Казахстан · Образование для всех</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop" aria-label="Вернуться наверх">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
