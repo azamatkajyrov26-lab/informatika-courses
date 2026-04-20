@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Компьютерная грамотность — основы работы с компьютером: железо, ОС, офисные программы, интернет">
+  <title>Компьютерная грамотность | Информатика</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" role="navigation" aria-label="Основная навигация">
+    <div class="navbar-inner">
+      <a href="index.html" class="nav-back" aria-label="Вернуться к списку курсов">
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+        Все курсы
+      </a>
+      <a href="index.html" class="nav-logo" aria-label="Информатика — главная">
+        <div class="nav-logo-icon" aria-hidden="true">💻</div>
+        <span style="display:none;">Инфор<span>матика</span></span>
+      </a>
+      <div style="width:80px;"></div>
+    </div>
+  </nav>
+
+  <!-- STICKY ENROLL BAR -->
+  <div class="enroll-bar" role="complementary" aria-label="Запись на курс">
+    <span class="enroll-bar-title">Компьютерная грамотность — Глава 1</span>
+    <a href="#start" class="btn btn-primary">
+      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+      Начать обучение
+    </a>
+  </div>
+
+  <!-- COURSE HERO -->
+  <header class="course-page-hero" aria-label="О курсе">
+    <div class="container">
+      <div class="course-hero-content">
+        <div class="hero-eyebrow fade-up">
+          <span class="badge badge-blue">Глава 1</span>
+          <span class="badge badge-green">Бесплатно</span>
+          <span class="badge" style="background:rgba(255,255,255,0.07);color:rgba(255,255,255,0.6);border:1px solid rgba(255,255,255,0.1);">Начинающий</span>
+        </div>
+        <h1 class="fade-up fade-up-1">Компьютерная<br><span class="gradient-text">грамотность</span></h1>
+        <p class="desc fade-up fade-up-2">
+          Узнай как устроен компьютер изнутри, научись работать с операционной системой,
+          файлами и папками. Освой Microsoft Word, Excel и безопасный серфинг в интернете.
+        </p>
+
+        <div class="course-hero-meta fade-up fade-up-3">
+          <span class="course-meta-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            4 часа контента
+          </span>
+          <span class="course-meta-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            6 модулей
+          </span>
+          <span class="course-meta-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+            Для всех возрастов
+          </span>
+        </div>
+
+        <div class="fade-up fade-up-4">
+          <div class="progress-section" aria-label="Прогресс курса">
+            <div class="progress-label">
+              <span>Твой прогресс</span>
+              <span id="progressPct">0%</span>
+            </div>
+            <div class="progress-track" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" aria-label="0% завершено">
+              <div class="progress-fill" id="progressFill" style="width:0%"></div>
+            </div>
+          </div>
+          <a href="#start" class="btn btn-primary">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            Начать обучение
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main id="start">
+
+    <!-- WHAT YOU LEARN -->
+    <section class="section" aria-label="Чему ты научишься">
+      <div class="container">
+        <div class="section-heading">
+          <div class="divider" aria-hidden="true"></div>
+          <h2>Чему ты <span class="accent">научишься</span></h2>
+          <p>Практические навыки, которые пригодятся в жизни и работе</p>
+        </div>
+
+        <div class="skills-list" role="list" aria-label="Список навыков">
+          <span class="skill-tag" role="listitem">Устройство компьютера</span>
+          <span class="skill-tag" role="listitem">Операционная система</span>
+          <span class="skill-tag" role="listitem">Работа с файлами</span>
+          <span class="skill-tag" role="listitem">Поиск в интернете</span>
+          <span class="skill-tag" role="listitem">Microsoft Word</span>
+          <span class="skill-tag" role="listitem">Microsoft Excel</span>
+          <span class="skill-tag" role="listitem">Цифровая безопасность</span>
+          <span class="skill-tag" role="listitem">Единицы измерения данных</span>
+          <span class="skill-tag" role="listitem">Облачные сервисы</span>
+          <span class="skill-tag" role="listitem">Электронная почта</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CURRICULUM -->
+    <section class="section" style="background:rgba(255,255,255,0.02);" aria-label="Программа курса">
+      <div class="container">
+        <div class="section-heading">
+          <div class="divider" aria-hidden="true"></div>
+          <h2>Программа <span class="accent">курса</span></h2>
+          <p>6 модулей — от железа до офисных программ</p>
+        </div>
+
+        <div class="module-list" role="list">
+
+          <!-- Module 1 -->
+          <div class="glass-card module-item" role="listitem" tabindex="0" aria-label="Модуль 1: Железо компьютера">
+            <div class="module-num" aria-hidden="true">01</div>
+            <div class="module-content">
+              <h4>База: Железо компьютера (Hardware)</h4>
+              <p>Процессор (CPU), видеокарта (GPU), оперативная память (RAM), жёсткий диск. Как они работают вместе?</p>
+            </div>
+            <div style="flex-shrink:0;">
+              <span class="badge badge-green">Старт</span>
+            </div>
+          </div>
+
+          <!-- Module 2 -->
+          <div class="glass-card module-item" role="listitem" tabindex="0" aria-label="Модуль 2: Программное обеспечение">
+            <div class="module-num" aria-hidden="true">02</div>
+            <div class="module-content">
+              <h4>Программное обеспечение (Software)</h4>
+              <p>Что такое операционная система? Чем отличается Windows от macOS и Linux? Какие программы нужны каждому?</p>
+            </div>
+            <div style="flex-shrink:0;">
+              <span class="badge badge-blue" style="font-size:0.7rem;padding:4px 10px;">30 мин</span>
+            </div>
+          </div>
+
+          <!-- Module 3 -->
+          <div class="glass-card module-item" role="listitem" tabindex="0" aria-label="Модуль 3: Файлы и папки">
+            <div class="module-num" aria-hidden="true">03</div>
+            <div class="module-content">
+              <h4>Файлы, папки и единицы хранения</h4>
+              <p>Биты и байты, килобайты, мегабайты, гигабайты. Как правильно организовать файлы на компьютере?</p>
+            </div>
+            <div style="flex-shrink:0;">
+              <span class="badge badge-blue" style="font-size:0.7rem;padding:4px 10px;">45 мин</span>
+            </div>
+          </div>
+
+          <!-- Module 4 -->
+          <div class="glass-card module-item" role="listitem" tabindex="0" aria-label="Модуль 4: Интернет и поиск">
+            <div class="module-num" aria-hidden="true">04</div>
+            <div class="module-content">
+              <h4>Навыки: Интернет и поиск информации</h4>
+              <p>Как правильно искать информацию в Google? Как распознать надёжный источник? Базовая цифровая грамотность.</p>
+            </div>
+            <div style="flex-shrink:0;">
+              <span class="badge badge-blue" style="font-size:0.7rem;padding:4px 10px;">40 мин</span>
+            </div>
+          </div>
+
+          <!-- Module 5 -->
+          <div class="glass-card module-item" role="listitem" tabindex="0" aria-label="Модуль 5: Microsoft Word">
+            <div class="module-num" aria-hidden="true">05</div>
+            <div class="module-content">
+              <h4>Навыки: Microsoft Word</h4>
+              <p>Создание и форматирование документов. Стили, таблицы, изображения. Как оформить реферат, резюме или заявление?</p>
+            </div>
+            <div style="flex-shrink:0;">
+              <span class="badge badge-blue" style="font-size:0.7rem;padding:4px 10px;">50 мин</span>
+            </div>
+          </div>
+
+          <!-- Module 6 -->
+          <div class="glass-card module-item" role="listitem" tabindex="0" aria-label="Модуль 6: Microsoft Excel">
+            <div class="module-num" aria-hidden="true">06</div>
+            <div class="module-content">
+              <h4>Навыки: Microsoft Excel</h4>
+              <p>Таблицы, формулы, диаграммы. Как вести личный бюджет, создавать отчёты и анализировать данные?</p>
+            </div>
+            <div style="flex-shrink:0;">
+              <span class="badge badge-blue" style="font-size:0.7rem;padding:4px 10px;">60 мин</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- STEM SECTION -->
+    <section class="section" aria-label="STEM образование">
+      <div class="container">
+        <div class="section-heading">
+          <div class="divider" aria-hidden="true"></div>
+          <h2><span class="accent">STEM</span> — болашаққа бастар жол</h2>
+          <p>Наука, технологии, инженерия и математика — путь в будущее</p>
+        </div>
+
+        <div class="glass-card" style="padding:32px;margin-bottom:32px;">
+          <p style="color:var(--text-secondary);line-height:1.8;margin-bottom:20px;">
+            <strong style="color:var(--text-primary);">STEM</strong> — это интегрированное образование, объединяющее науку, технологии, инженерию и математику.
+            Цель — подготовить учеников к решению реальных задач через практику и критическое мышление.
+          </p>
+          <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:12px;">
+            <div class="glass-card" style="padding:16px;text-align:center;">
+              <div style="font-size:1.8rem;margin-bottom:8px;">🔬</div>
+              <div style="font-size:0.85rem;font-weight:600;">Science</div>
+              <div style="font-size:0.75rem;color:var(--text-muted);">Наука</div>
+            </div>
+            <div class="glass-card" style="padding:16px;text-align:center;">
+              <div style="font-size:1.8rem;margin-bottom:8px;">💻</div>
+              <div style="font-size:0.85rem;font-weight:600;">Technology</div>
+              <div style="font-size:0.75rem;color:var(--text-muted);">Технологии</div>
+            </div>
+            <div class="glass-card" style="padding:16px;text-align:center;">
+              <div style="font-size:1.8rem;margin-bottom:8px;">⚙️</div>
+              <div style="font-size:0.85rem;font-weight:600;">Engineering</div>
+              <div style="font-size:0.75rem;color:var(--text-muted);">Инженерия</div>
+            </div>
+            <div class="glass-card" style="padding:16px;text-align:center;">
+              <div style="font-size:1.8rem;margin-bottom:8px;">📐</div>
+              <div style="font-size:0.85rem;font-weight:600;">Mathematics</div>
+              <div style="font-size:0.75rem;color:var(--text-muted);">Математика</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Benefits -->
+        <div class="features-grid" style="margin-bottom:48px;">
+          <div class="glass-card feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+            </div>
+            <div class="feature-content">
+              <h3>Интерактивное обучение</h3>
+              <p>Лабораторные работы и практические проекты вместо скучных лекций</p>
+            </div>
+          </div>
+
+          <div class="glass-card feature-card">
+            <div class="feature-icon red" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div class="feature-content">
+              <h3>Командная работа</h3>
+              <p>Проекты в группах развивают коммуникацию и умение работать вместе</p>
+            </div>
+          </div>
+
+          <div class="glass-card feature-card">
+            <div class="feature-icon green" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <div class="feature-content">
+              <h3>Применение на практике</h3>
+              <p>Знания применяются к реальным задачам — от автоматики до программирования</p>
+            </div>
+          </div>
+
+          <div class="glass-card feature-card">
+            <div class="feature-icon purple" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <div class="feature-content">
+              <h3>Карьера в IT</h3>
+              <p>Подготовка к востребованным профессиям будущего в сфере технологий</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project ideas -->
+        <div class="section-heading">
+          <h2 style="font-size:1.4rem;">10 идей STEM-проектов <span class="accent">для учеников</span></h2>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr;gap:10px;">
+          <div class="glass-card" style="padding:16px;display:flex;gap:12px;align-items:flex-start;">
+            <span style="color:var(--accent-blue);font-weight:800;font-size:1rem;flex-shrink:0;">01</span>
+            <span style="font-size:0.875rem;color:var(--text-secondary);">Автоматическая система полива растений на Arduino</span>
+          </div>
+          <div class="glass-card" style="padding:16px;display:flex;gap:12px;align-items:flex-start;">
+            <span style="color:var(--accent-blue);font-weight:800;font-size:1rem;flex-shrink:0;">02</span>
+            <span style="font-size:0.875rem;color:var(--text-secondary);">Детектор землетрясений с оповещением по Wi-Fi</span>
+          </div>
+          <div class="glass-card" style="padding:16px;display:flex;gap:12px;align-items:flex-start;">
+            <span style="color:var(--accent-blue);font-weight:800;font-size:1rem;flex-shrink:0;">03</span>
+            <span style="font-size:0.875rem;color:var(--text-secondary);">3D-печать прототипа инновационного устройства</span>
+          </div>
+          <div class="glass-card" style="padding:16px;display:flex;gap:12px;align-items:flex-start;">
+            <span style="color:var(--accent-blue);font-weight:800;font-size:1rem;flex-shrink:0;">04</span>
+            <span style="font-size:0.875rem;color:var(--text-secondary);">Умный светофор с датчиком движения на Micro:bit</span>
+          </div>
+          <div class="glass-card" style="padding:16px;display:flex;gap:12px;align-items:flex-start;">
+            <span style="color:var(--accent-blue);font-weight:800;font-size:1rem;flex-shrink:0;">05</span>
+            <span style="font-size:0.875rem;color:var(--text-secondary);">Мобильное приложение для мониторинга качества воздуха</span>
+          </div>
+          <div class="glass-card" style="padding:16px;display:flex;gap:12px;align-items:flex-start;">
+            <span style="color:var(--accent-blue);font-weight:800;font-size:1rem;flex-shrink:0;">06</span>
+            <span style="font-size:0.875rem;color:var(--text-secondary);">Роботизированная рука управляемая перчаткой</span>
+          </div>
+          <div class="glass-card" style="padding:16px;display:flex;gap:12px;align-items:flex-start;">
+            <span style="color:var(--accent-blue);font-weight:800;font-size:1rem;flex-shrink:0;">07</span>
+            <span style="font-size:0.875rem;color:var(--text-secondary);">Игра на Scratch с обучающим контентом</span>
+          </div>
+          <div class="glass-card" style="padding:16px;display:flex;gap:12px;align-items:flex-start;">
+            <span style="color:var(--accent-blue);font-weight:800;font-size:1rem;flex-shrink:0;">08</span>
+            <span style="font-size:0.875rem;color:var(--text-secondary);">Солнечная батарея и система хранения энергии</span>
+          </div>
+          <div class="glass-card" style="padding:16px;display:flex;gap:12px;align-items:flex-start;">
+            <span style="color:var(--accent-blue);font-weight:800;font-size:1rem;flex-shrink:0;">09</span>
+            <span style="font-size:0.875rem;color:var(--text-secondary);">Веб-сайт для мониторинга экологии родного города</span>
+          </div>
+          <div class="glass-card" style="padding:16px;display:flex;gap:12px;align-items:flex-start;">
+            <span style="color:var(--accent-blue);font-weight:800;font-size:1rem;flex-shrink:0;">10</span>
+            <span style="font-size:0.875rem;color:var(--text-secondary);">VR/AR приложение для изучения анатомии человека</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FREE TOOLS -->
+    <section class="section" style="background:rgba(255,255,255,0.02);" aria-label="Бесплатные инструменты">
+      <div class="container">
+        <div class="section-heading">
+          <div class="divider" aria-hidden="true"></div>
+          <h2>Бесплатные <span class="accent">инструменты</span></h2>
+          <p>Всё что нужно для обучения — уже доступно бесплатно</p>
+        </div>
+
+        <div class="tools-grid" role="list">
+          <div class="glass-card tool-card" role="listitem">
+            <span class="tool-emoji" aria-hidden="true">🐱</span>
+            <div>
+              <div style="font-weight:700;font-size:0.875rem;">Scratch</div>
+              <div style="font-size:0.75rem;color:var(--text-muted);">Программирование</div>
+            </div>
+          </div>
+          <div class="glass-card tool-card" role="listitem">
+            <span class="tool-emoji" aria-hidden="true">🌐</span>
+            <div>
+              <div style="font-weight:700;font-size:0.875rem;">Code.org</div>
+              <div style="font-size:0.75rem;color:var(--text-muted);">Основы кода</div>
+            </div>
+          </div>
+          <div class="glass-card tool-card" role="listitem">
+            <span class="tool-emoji" aria-hidden="true">🔧</span>
+            <div>
+              <div style="font-weight:700;font-size:0.875rem;">Tinkercad</div>
+              <div style="font-size:0.75rem;color:var(--text-muted);">3D и Arduino</div>
+            </div>
+          </div>
+          <div class="glass-card tool-card" role="listitem">
+            <span class="tool-emoji" aria-hidden="true">📟</span>
+            <div>
+              <div style="font-weight:700;font-size:0.875rem;">Micro:bit</div>
+              <div style="font-size:0.75rem;color:var(--text-muted);">Микроконтроллер</div>
+            </div>
+          </div>
+          <div class="glass-card tool-card" role="listitem">
+            <span class="tool-emoji" aria-hidden="true">⚡</span>
+            <div>
+              <div style="font-weight:700;font-size:0.875rem;">Arduino</div>
+              <div style="font-size:0.75rem;color:var(--text-muted);">Электроника</div>
+            </div>
+          </div>
+          <div class="glass-card tool-card" role="listitem">
+            <span class="tool-emoji" aria-hidden="true">🖨️</span>
+            <div>
+              <div style="font-weight:700;font-size:0.875rem;">3D печать</div>
+              <div style="font-size:0.75rem;color:var(--text-muted);">Прототипы</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEXT COURSE CTA -->
+    <section class="section" aria-label="Следующий шаг">
+      <div class="container">
+        <div class="cta-banner">
+          <div style="font-size:2.5rem;margin-bottom:12px;" aria-hidden="true">🎉</div>
+          <h2>Готов пройти этот курс?</h2>
+          <p>Начни прямо сейчас — это бесплатно и займёт всего 4 часа</p>
+          <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+            <a href="#start" class="btn btn-primary">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              Начать обучение
+            </a>
+            <a href="index.html" class="btn btn-outline">Все курсы</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <div class="nav-logo-icon" aria-hidden="true">💻</div>
+            <span>Инфор<span>матика</span></span>
+          </a>
+          <p>Современное IT образование для всех. Бесплатно, практично и на русском языке.</p>
+        </div>
+
+        <nav class="footer-links-grid" aria-label="Навигация в подвале">
+          <div class="footer-col">
+            <h4>Курсы</h4>
+            <a href="course.html">Компьютерная грамотность</a>
+            <a href="#">Программирование</a>
+            <a href="#">STEM технологии</a>
+          </div>
+          <div class="footer-col">
+            <h4>Ресурсы</h4>
+            <a href="#">Scratch</a>
+            <a href="#">Code.org</a>
+            <a href="#">Tinkercad</a>
+          </div>
+          <div class="footer-col">
+            <h4>Платформа</h4>
+            <a href="#">О нас</a>
+            <a href="#">Контакты</a>
+          </div>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2024 Информатика. Все права защищены.</p>
+        <p>Сделано с ❤ для образования в Казахстане</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button class="back-to-top" id="backToTop" aria-label="Вернуться наверх">
+    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
