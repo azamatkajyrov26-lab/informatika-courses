@@ -230,6 +230,45 @@
     </div>
   </div>
 
+  <!-- CTA SECTION -->
+  <section class="cta-section" aria-label="Оставить контакты">
+    <div class="cta-section-inner">
+      <div class="cta-kicker" aria-hidden="true">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        Связаться с нами
+      </div>
+      <h2>Есть вопросы? <span>Напишем вам</span></h2>
+      <p>Оставь имя и номер телефона — мы свяжемся и поможем выбрать подходящий курс.</p>
+
+      <form class="cta-form" id="ctaForm" novalidate aria-label="Форма обратной связи">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="ctaName">Ваше имя *</label>
+            <input class="form-input" id="ctaName" type="text" placeholder="Азамат" autocomplete="given-name" required aria-required="true" aria-describedby="nameError">
+            <span class="form-error-msg" id="nameError" role="alert">Введите имя (минимум 2 символа)</span>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="ctaPhone">Телефон или Telegram *</label>
+            <input class="form-input" id="ctaPhone" type="tel" placeholder="+7 700 000 00 00" autocomplete="tel" required aria-required="true" aria-describedby="phoneError">
+            <span class="form-error-msg" id="phoneError" role="alert">Введите корректный номер</span>
+            <span class="form-hint">Можно написать @username Telegram</span>
+          </div>
+        </div>
+        <button class="btn-submit" id="ctaSubmit" type="submit">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          Оставить контакты
+        </button>
+        <p class="form-privacy">🔒 Данные не передаются третьим лицам</p>
+      </form>
+
+      <div class="form-success" id="ctaSuccess" role="alert" aria-live="polite">
+        <div class="form-success-icon" aria-hidden="true">✓</div>
+        <h3>Заявка отправлена!</h3>
+        <p>Мы получили ваши данные и свяжемся с вами в ближайшее время.</p>
+      </div>
+    </div>
+  </section>
+
   <footer role="contentinfo">
     <div class="footer-inner">
       <div class="footer-top">
@@ -275,5 +314,6 @@
   </button>
 
   <script src="js/main.js"></script>
+  <script src="js/telegram.js"></script>
 </body>
 </html>
