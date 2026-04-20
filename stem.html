@@ -22,6 +22,85 @@
         <div class="nav-logo-mark" aria-hidden="true">IT</div>
         <span style="display:none;">Информатика</span>
       </a>
+      <div style="display:flex;align-items:center;gap:10px;">
+        <div class="lang-switch" role="group" aria-label="Выбор языка">
+          <button aria-pressed="false">РУС</button>
+          <button class="active" aria-pressed="true">ҚАЗ</button>
+        </div>
+        <button class="nav-burger" id="navBurger" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobileDrawer">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-overlay" id="mobileOverlay" aria-hidden="true"></div>
+  <nav class="mobile-drawer" id="mobileDrawer" aria-label="Мобильное меню" aria-hidden="true">
+    <div class="drawer-header">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-mark" aria-hidden="true">IT</div>
+        Информатика
+      </a>
+      <button class="drawer-close" id="drawerClose" aria-label="Закрыть меню">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div class="drawer-body">
+      <p class="drawer-section-label">Навигация</p>
+      <a href="index.html" class="drawer-nav-item">
+        <span class="drawer-nav-icon" aria-hidden="true">🏠</span>
+        Все курсы
+      </a>
+      <div class="drawer-divider" aria-hidden="true"></div>
+      <p class="drawer-section-label">Курсы</p>
+      <a href="course.html" class="drawer-nav-item">
+        <span class="drawer-nav-icon" aria-hidden="true">🖥️</span>
+        Компьютерная грамотность
+      </a>
+      <a href="stem.html" class="drawer-nav-item active">
+        <span class="drawer-nav-icon" aria-hidden="true">🔬</span>
+        STEM технологии
+        <span class="drawer-nav-badge">Гл. 3</span>
+      </a>
+      <a href="#" class="drawer-nav-item">
+        <span class="drawer-nav-icon" aria-hidden="true">⚡</span>
+        Программирование
+      </a>
+      <a href="#" class="drawer-nav-item">
+        <span class="drawer-nav-icon" aria-hidden="true">🌐</span>
+        Web разработка
+      </a>
+      <div class="drawer-divider" aria-hidden="true"></div>
+      <p class="drawer-section-label">Содержание главы</p>
+      <a href="#what-is-stem" class="drawer-nav-item" style="font-size:0.85rem;">
+        <span class="drawer-nav-icon" style="font-size:0.85rem;" aria-hidden="true">🔬</span>
+        Что такое STEM?
+      </a>
+      <a href="#why-stem" class="drawer-nav-item" style="font-size:0.85rem;">
+        <span class="drawer-nav-icon" style="font-size:0.85rem;" aria-hidden="true">🌍</span>
+        Почему STEM важен
+      </a>
+      <a href="#benefits" class="drawer-nav-item" style="font-size:0.85rem;">
+        <span class="drawer-nav-icon" style="font-size:0.85rem;" aria-hidden="true">⭐</span>
+        Что даёт образование
+      </a>
+      <a href="#projects" class="drawer-nav-item" style="font-size:0.85rem;">
+        <span class="drawer-nav-icon" style="font-size:0.85rem;" aria-hidden="true">💡</span>
+        10 идей проектов
+      </a>
+      <a href="#how-to-start" class="drawer-nav-item" style="font-size:0.85rem;">
+        <span class="drawer-nav-icon" style="font-size:0.85rem;" aria-hidden="true">🗺️</span>
+        Как начать проект
+      </a>
+      <a href="#tools" class="drawer-nav-item" style="font-size:0.85rem;">
+        <span class="drawer-nav-icon" style="font-size:0.85rem;" aria-hidden="true">🛠️</span>
+        Инструменты
+      </a>
+    </div>
+    <div class="drawer-lang">
+      <span class="drawer-lang-label">Язык / Тіл</span>
       <div class="lang-switch" role="group" aria-label="Выбор языка">
         <button aria-pressed="false">РУС</button>
         <button class="active" aria-pressed="true">ҚАЗ</button>
