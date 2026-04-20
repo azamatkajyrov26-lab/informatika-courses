@@ -1,7 +1,7 @@
 // ===== TELEGRAM BOT CONFIG =====
 // Замени значения после получения у @BotFather и @userinfobot
-const TG_TOKEN   = 'СЮДА_ВСТАВЬ_BOT_TOKEN';   // пример: 7412345678:AAHxyz...
-const TG_CHAT_ID = 'СЮДА_ВСТАВЬ_CHAT_ID';     // пример: 123456789
+const TG_TOKEN   = '8601517889:AAHUXXh3EdY978f648ilZKFCfgLKIHylUa0';
+const TG_CHAT_ID = '6555317176';
 
 // ===== FORM HANDLER =====
 document.addEventListener('DOMContentLoaded', () => {
