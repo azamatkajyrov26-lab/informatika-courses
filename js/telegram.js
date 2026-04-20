@@ -1,6 +1,6 @@
 // ===== TELEGRAM CONFIG =====
-const TG_TOKEN   = '8601517889:AAHUXXh3EdY978f648ilZKFCfgLKIHylUa0';
-const TG_CHAT_ID = '6555317176';
+const TG_TOKEN    = '8601517889:AAHUXXh3EdY978f648ilZKFCfgLKIHylUa0';
+const TG_CHAT_IDS = ['6555317176', '6205015183']; // Azamat + Kozha
 
 // ===== INIT (runs after DOM is ready, works both inline and defer) =====
 function initForm() {
@@ -42,15 +42,13 @@ function initForm() {
     submitBtn.innerHTML = '<span class="spinner"></span> Отправка...';
 
     try {
-      const resp = await fetch(`https://api.telegram.org/bot${TG_TOKEN}/sendMessage`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ chat_id: TG_CHAT_ID, text, parse_mode: 'HTML' }),
-      });
-
-      if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
-      const data = await resp.json();
-      if (!data.ok) throw new Error(data.description || 'Telegram error');
+      await Promise.all(TG_CHAT_IDS.map(id =>
+        fetch(`https://api.telegram.org/bot${TG_TOKEN}/sendMessage`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ chat_id: id, text, parse_mode: 'HTML' }),
+        })
+      ));
 
       form.style.display = 'none';
       successBox.classList.add('show');
